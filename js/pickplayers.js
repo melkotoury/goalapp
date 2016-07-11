@@ -56,6 +56,8 @@ $('#random').click(function(){
     //$display.animate( {"font-size": "12px"}, 0 );
     // or
     $display.removeClass( "winner" );
+     $('#random').removeClass("btn-success");
+                    $('#random').addClass("btn-primary");
    
 
 
@@ -93,7 +95,8 @@ $('#random').click(function(){
                     //$display.animate( {"font-size": "30px"}, "fast" );
                     // or
                     $display.addClass( "winner" );
-                  
+                    $('#random').removeClass("btn-primary");
+                    $('#random').addClass("btn-success");
 
                 }
             };
@@ -120,7 +123,8 @@ $('#random1').click(function(){
     //$display.animate( {"font-size": "12px"}, 0 );
     // or
     $display1.removeClass( "winner" );
-   
+    $('#random1').removeClass("btn-success");
+    $('#random1').addClass("btn-primary");
 
 
     // improvement: use a for loop instead of a for..in
@@ -156,7 +160,8 @@ $('#random1').click(function(){
                     //$display.animate( {"font-size": "30px"}, "fast" );
                     // or
                     $display1.addClass( "winner" );
-                  
+                     $('#random1').removeClass("btn-primary");
+                    $('#random1').addClass("btn-success");
 
                 }
             };
@@ -183,7 +188,8 @@ $('#random2').click(function(){
     //$display.animate( {"font-size": "12px"}, 0 );
     // or
     $display2.removeClass( "winner" );
-   
+     $('#random2').removeClass("btn-success");
+       $('#random2').addClass("btn-primary");
 
 
     // improvement: use a for loop instead of a for..in
@@ -219,7 +225,8 @@ $('#random2').click(function(){
                     //$display.animate( {"font-size": "30px"}, "fast" );
                     // or
                     $display2.addClass( "winner" );
-                  
+                     $('#random2').removeClass("btn-primary");
+                    $('#random2').addClass("btn-success");
 
                 }
             };
@@ -246,7 +253,8 @@ $('#random3').click(function(){
     //$display.animate( {"font-size": "12px"}, 0 );
     // or
     $display3.removeClass( "winner" );
-   
+    $('#random3').removeClass("btn-success");
+     $('#random3').addClass("btn-primary");
 
 
     // improvement: use a for loop instead of a for..in
@@ -282,7 +290,8 @@ $('#random3').click(function(){
                     //$display.animate( {"font-size": "30px"}, "fast" );
                     // or
                     $display3.addClass( "winner" );
-                  
+                     $('#random3').removeClass("btn-primary");
+                    $('#random3').addClass("btn-success");
 
                 }
             };
@@ -310,7 +319,8 @@ $('#random4').click(function(){
     //$display.animate( {"font-size": "12px"}, 0 );
     // or
     $display4.removeClass( "winner" );
-   
+    $('#random4').removeClass("btn-success");
+    $('#random4').addClass("btn-primary");
 
 
     // improvement: use a for loop instead of a for..in
@@ -346,7 +356,8 @@ $('#random4').click(function(){
                     //$display.animate( {"font-size": "30px"}, "fast" );
                     // or
                     $display4.addClass( "winner" );
-                  
+                    $('#random4').removeClass("btn-primary");
+                    $('#random4').addClass("btn-success");
 
                 }
             };
@@ -373,7 +384,8 @@ $('#random5').click(function(){
     //$display.animate( {"font-size": "12px"}, 0 );
     // or
     $display5.removeClass( "winner" );
-   
+    $('#random5').removeClass("btn-success");
+    $('#random5').addClass("btn-primary"); 
 
 
     // improvement: use a for loop instead of a for..in
@@ -409,7 +421,8 @@ $('#random5').click(function(){
                     //$display.animate( {"font-size": "30px"}, "fast" );
                     // or
                     $display5.addClass( "winner" );
-                  
+                    $('#random5').removeClass("btn-primary");
+                    $('#random5').addClass("btn-success");
 
                 }
             };
@@ -436,7 +449,8 @@ $('#random6').click(function(){
     //$display.animate( {"font-size": "12px"}, 0 );
     // or
     $display6.removeClass( "winner" );
-   
+    $('#random6').removeClass("btn-success");
+    $('#random6').addClass("btn-primary");
 
 
     // improvement: use a for loop instead of a for..in
@@ -472,7 +486,8 @@ $('#random6').click(function(){
                     //$display.animate( {"font-size": "30px"}, "fast" );
                     // or
                     $display6.addClass( "winner" );
-                  
+                    $('#random6').removeClass("btn-primary");
+                    $('#random6').addClass("btn-success");
 
                 }
             };
@@ -498,7 +513,8 @@ $('#random7').click(function(){
     //$display.animate( {"font-size": "12px"}, 0 );
     // or
     $display7.removeClass( "winner" );
-   
+     $('#random7').removeClass("btn-success");
+     $('#random7').addClass("btn-primary");
 
 
     // improvement: use a for loop instead of a for..in
@@ -534,7 +550,8 @@ $('#random7').click(function(){
                     //$display.animate( {"font-size": "30px"}, "fast" );
                     // or
                     $display7.addClass( "winner" );
-                  
+                    $('#random7').removeClass("btn-primary");
+                    $('#random7').addClass("btn-success");
 
                 }
             };
@@ -561,7 +578,8 @@ $('#random8').click(function(){
     //$display.animate( {"font-size": "12px"}, 0 );
     // or
     $display8.removeClass( "winner" );
-   
+     $('#random8').removeClass("btn-success");
+     $('#random8').addClass("btn-primary");
 
 
     // improvement: use a for loop instead of a for..in
@@ -597,7 +615,8 @@ $('#random8').click(function(){
                     //$display.animate( {"font-size": "30px"}, "fast" );
                     // or
                     $display8.addClass( "winner" );
-                  
+                    $('#random8').removeClass("btn-primary");
+                    $('#random8').addClass("btn-success");
 
                 }
             };
@@ -623,7 +642,8 @@ $('#random9').click(function(){
     //$display.animate( {"font-size": "12px"}, 0 );
     // or
     $display9.removeClass( "winner" );
-   
+     $('#random9').removeClass("btn-success");
+    $('#random9').addClass("btn-primary");
 
 
     // improvement: use a for loop instead of a for..in
@@ -659,7 +679,8 @@ $('#random9').click(function(){
                     //$display.animate( {"font-size": "30px"}, "fast" );
                     // or
                     $display9.addClass( "winner" );
-                  
+                    $('#random9').removeClass("btn-primary");
+                    $('#random9').addClass("btn-success");
 
                 }
             };
