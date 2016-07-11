@@ -34,7 +34,19 @@ var students = [
 ];
 
 var $display = $("#display");
+var $display1 = $("#display1");
+var $display2 = $("#display2");
+var $display3 = $("#display3");
+var $display4 = $("#display4");
+var $display5 = $("#display5");
+var $display6 = $("#display6");
+var $display7 = $("#display7");
+var $display8 = $("#display8");
+var $display9 = $("#display9");
 
+
+
+// first player
 $('#random').click(function(){
     var total = students.length,
         selected = Math.floor( Math.random() * total ),
@@ -44,6 +56,8 @@ $('#random').click(function(){
     //$display.animate( {"font-size": "12px"}, 0 );
     // or
     $display.removeClass( "winner" );
+   
+
 
     // improvement: use a for loop instead of a for..in
     for (i=0; i<total; i++) {
@@ -57,11 +71,30 @@ $('#random').click(function(){
                 // code here will be delayed
                 console.log( "timeout", i );
                 //$display.text( students[i].PLAYER_ID);
-                $display.text(students[i].PLAYER_ID+'-'+ students[i].PLAYER_Name.toUpperCase() );
-                if( i === selected ) {
+                $display.text(students[i].PLAYER_ID+1+'-'+ students[i].PLAYER_Name.toUpperCase() );
+               
+
+                if( i === selected 
+                     && $display.text() != $display1.text()
+                      && $display.text() != $display2.text()
+                       && $display.text() != $display3.text()
+                        && $display.text() != $display4.text()
+                         && $display.text() != $display5.text()
+                          && $display.text() != $display6.text()
+                           && $display.text() != $display7.text() 
+                            && $display.text() != $display8.text()
+                              && $display.text() != $display9.text()
+
+                
+                
+                
+                
+                 ) {
                     //$display.animate( {"font-size": "30px"}, "fast" );
                     // or
                     $display.addClass( "winner" );
+                  
+
                 }
             };
         }(i)), i*250);
@@ -74,3 +107,570 @@ $('#random').click(function(){
     }
 
 });
+// End first player
+
+// Second Player
+
+$('#random1').click(function(){
+    var total = students.length,
+        selected = Math.floor( Math.random() * total ),
+        i = 0;
+
+    console.log( "selected", selected );
+    //$display.animate( {"font-size": "12px"}, 0 );
+    // or
+    $display1.removeClass( "winner" );
+   
+
+
+    // improvement: use a for loop instead of a for..in
+    for (i=0; i<total; i++) {
+
+        console.log( "for", i );
+        // here is the trick, use an Immediately-Invoked Function Expression (IIFE)
+        // see http://benalman.com/news/2010/11/immediately-invoked-function-expression/
+        // play with the two button "IIFE" and "No IIFE" to see why this is important
+        setTimeout((function(i){
+            return function(){
+                // code here will be delayed
+                console.log( "timeout", i );
+                //$display.text( students[i].PLAYER_ID);
+                $display1.text(students[i].PLAYER_ID+1+'-'+ students[i].PLAYER_Name.toUpperCase() );
+               
+
+                if( i === selected 
+                    && $display1.text() != $display.text()
+                     && $display1.text() != $display2.text()
+                      && $display1.text() != $display3.text()
+                       && $display1.text() != $display4.text()
+                        && $display1.text() != $display5.text()
+                         && $display1.text() != $display6.text()
+                          && $display1.text() != $display7.text()
+                           && $display1.text() != $display8.text() 
+                            && $display1.text() != $display9.text()
+                
+                
+                
+                
+                 ){
+                    //$display.animate( {"font-size": "30px"}, "fast" );
+                    // or
+                    $display1.addClass( "winner" );
+                  
+
+                }
+            };
+        }(i)), i*250);
+
+        // improvement: triple equal sign, always !
+        if( i === selected ) {
+            // code here will execute immediately
+            break;
+        }
+    }
+
+});
+// end Second Player
+
+// Third Player
+
+$('#random2').click(function(){
+    var total = students.length,
+        selected = Math.floor( Math.random() * total ),
+        i = 0;
+
+    console.log( "selected", selected );
+    //$display.animate( {"font-size": "12px"}, 0 );
+    // or
+    $display2.removeClass( "winner" );
+   
+
+
+    // improvement: use a for loop instead of a for..in
+    for (i=0; i<total; i++) {
+
+        console.log( "for", i );
+        // here is the trick, use an Immediately-Invoked Function Expression (IIFE)
+        // see http://benalman.com/news/2010/11/immediately-invoked-function-expression/
+        // play with the two button "IIFE" and "No IIFE" to see why this is important
+        setTimeout((function(i){
+            return function(){
+                // code here will be delayed
+                console.log( "timeout", i );
+                //$display.text( students[i].PLAYER_ID);
+                $display2.text(students[i].PLAYER_ID+1+'-'+ students[i].PLAYER_Name.toUpperCase() );
+               
+
+                if( i === selected 
+                    && $display2.text() != $display.text()
+                     && $display2.text() != $display1.text()
+                      && $display2.text() != $display3.text()
+                       && $display2.text() != $display4.text()
+                        && $display2.text() != $display5.text()
+                         && $display2.text() != $display6.text()
+                          && $display2.text() != $display7.text()
+                           && $display2.text() != $display8.text() 
+                            && $display2.text() != $display9.text()
+                
+                
+                
+                
+                 ) {
+                    //$display.animate( {"font-size": "30px"}, "fast" );
+                    // or
+                    $display2.addClass( "winner" );
+                  
+
+                }
+            };
+        }(i)), i*250);
+
+        // improvement: triple equal sign, always !
+        if( i === selected ) {
+            // code here will execute immediately
+            break;
+        }
+    }
+
+});
+// end Third Player
+
+// Fourth Player
+
+$('#random3').click(function(){
+    var total = students.length,
+        selected = Math.floor( Math.random() * total ),
+        i = 0;
+
+    console.log( "selected", selected );
+    //$display.animate( {"font-size": "12px"}, 0 );
+    // or
+    $display3.removeClass( "winner" );
+   
+
+
+    // improvement: use a for loop instead of a for..in
+    for (i=0; i<total; i++) {
+
+        console.log( "for", i );
+        // here is the trick, use an Immediately-Invoked Function Expression (IIFE)
+        // see http://benalman.com/news/2010/11/immediately-invoked-function-expression/
+        // play with the two button "IIFE" and "No IIFE" to see why this is important
+        setTimeout((function(i){
+            return function(){
+                // code here will be delayed
+                console.log( "timeout", i );
+                //$display.text( students[i].PLAYER_ID);
+                $display3.text(students[i].PLAYER_ID+1+'-'+ students[i].PLAYER_Name.toUpperCase() );
+               
+
+                if( i === selected 
+                    && $display3.text() != $display.text()
+                     && $display3.text() != $display1.text()
+                      && $display3.text() != $display2.text()
+                       && $display3.text() != $display4.text()
+                        && $display3.text() != $display5.text()
+                         && $display3.text() != $display6.text()
+                          && $display3.text() != $display7.text()
+                           && $display3.text() != $display8.text() 
+                            && $display3.text() != $display9.text()
+                
+                
+                
+                
+                 ) {
+                    //$display.animate( {"font-size": "30px"}, "fast" );
+                    // or
+                    $display3.addClass( "winner" );
+                  
+
+                }
+            };
+        }(i)), i*250);
+
+        // improvement: triple equal sign, always !
+        if( i === selected ) {
+            // code here will execute immediately
+            break;
+        }
+    }
+
+});
+// end Fourth Player
+
+
+// Fifth Player
+
+$('#random4').click(function(){
+    var total = students.length,
+        selected = Math.floor( Math.random() * total ),
+        i = 0;
+
+    console.log( "selected", selected );
+    //$display.animate( {"font-size": "12px"}, 0 );
+    // or
+    $display4.removeClass( "winner" );
+   
+
+
+    // improvement: use a for loop instead of a for..in
+    for (i=0; i<total; i++) {
+
+        console.log( "for", i );
+        // here is the trick, use an Immediately-Invoked Function Expression (IIFE)
+        // see http://benalman.com/news/2010/11/immediately-invoked-function-expression/
+        // play with the two button "IIFE" and "No IIFE" to see why this is important
+        setTimeout((function(i){
+            return function(){
+                // code here will be delayed
+                console.log( "timeout", i );
+                //$display.text( students[i].PLAYER_ID);
+                $display4.text(students[i].PLAYER_ID+1+'-'+ students[i].PLAYER_Name.toUpperCase() );
+               
+
+                if( i === selected 
+                    && $display4.text() != $display.text()
+                     && $display4.text() != $display1.text()
+                      && $display4.text() != $display2.text()
+                       && $display4.text() != $display3.text()
+                        && $display4.text() != $display5.text()
+                         && $display4.text() != $display6.text()
+                          && $display4.text() != $display7.text()
+                           && $display4.text() != $display8.text() 
+                            && $display4.text() != $display9.text()
+                
+                
+                
+                
+                 ) {
+                    //$display.animate( {"font-size": "30px"}, "fast" );
+                    // or
+                    $display4.addClass( "winner" );
+                  
+
+                }
+            };
+        }(i)), i*250);
+
+        // improvement: triple equal sign, always !
+        if( i === selected ) {
+            // code here will execute immediately
+            break;
+        }
+    }
+
+});
+// end Fifth Player
+
+// Sixth Player
+
+$('#random5').click(function(){
+    var total = students.length,
+        selected = Math.floor( Math.random() * total ),
+        i = 0;
+
+    console.log( "selected", selected );
+    //$display.animate( {"font-size": "12px"}, 0 );
+    // or
+    $display5.removeClass( "winner" );
+   
+
+
+    // improvement: use a for loop instead of a for..in
+    for (i=0; i<total; i++) {
+
+        console.log( "for", i );
+        // here is the trick, use an Immediately-Invoked Function Expression (IIFE)
+        // see http://benalman.com/news/2010/11/immediately-invoked-function-expression/
+        // play with the two button "IIFE" and "No IIFE" to see why this is important
+        setTimeout((function(i){
+            return function(){
+                // code here will be delayed
+                console.log( "timeout", i );
+                //$display.text( students[i].PLAYER_ID);
+                $display5.text(students[i].PLAYER_ID+1+'-'+ students[i].PLAYER_Name.toUpperCase() );
+               
+
+                if( i === selected  
+                    && $display5.text() != $display.text()
+                     && $display5.text() != $display1.text()
+                      && $display5.text() != $display2.text()
+                       && $display5.text() != $display3.text()
+                        && $display5.text() != $display4.text()
+                         && $display5.text() != $display6.text()
+                          && $display5.text() != $display7.text()
+                           && $display5.text() != $display8.text() 
+                            && $display5.text() != $display9.text()
+                
+                
+                
+                
+                 ) {
+                    //$display.animate( {"font-size": "30px"}, "fast" );
+                    // or
+                    $display5.addClass( "winner" );
+                  
+
+                }
+            };
+        }(i)), i*250);
+
+        // improvement: triple equal sign, always !
+        if( i === selected ) {
+            // code here will execute immediately
+            break;
+        }
+    }
+
+});
+// end Sixth Player
+
+// Seventh Player
+
+$('#random6').click(function(){
+    var total = students.length,
+        selected = Math.floor( Math.random() * total ),
+        i = 0;
+
+    console.log( "selected", selected );
+    //$display.animate( {"font-size": "12px"}, 0 );
+    // or
+    $display6.removeClass( "winner" );
+   
+
+
+    // improvement: use a for loop instead of a for..in
+    for (i=0; i<total; i++) {
+
+        console.log( "for", i );
+        // here is the trick, use an Immediately-Invoked Function Expression (IIFE)
+        // see http://benalman.com/news/2010/11/immediately-invoked-function-expression/
+        // play with the two button "IIFE" and "No IIFE" to see why this is important
+        setTimeout((function(i){
+            return function(){
+                // code here will be delayed
+                console.log( "timeout", i );
+                //$display.text( students[i].PLAYER_ID);
+                $display6.text(students[i].PLAYER_ID+1+'-'+ students[i].PLAYER_Name.toUpperCase() );
+               
+
+                if( i === selected 
+                    && $display6.text() != $display.text()
+                     && $display6.text() != $display1.text()
+                      && $display6.text() != $display2.text()
+                       && $display6.text() != $display3.text()
+                        && $display6.text() != $display4.text()
+                         && $display6.text() != $display5.text()
+                          && $display6.text() != $display7.text()
+                           && $display6.text() != $display8.text() 
+                            && $display6.text() != $display9.text()
+                
+                
+                
+                
+                 ) {
+                    //$display.animate( {"font-size": "30px"}, "fast" );
+                    // or
+                    $display6.addClass( "winner" );
+                  
+
+                }
+            };
+        }(i)), i*250);
+
+        // improvement: triple equal sign, always !
+        if( i === selected ) {
+            // code here will execute immediately
+            break;
+        }
+    }
+
+});
+// end Seventh Player
+// Eighth Player
+
+$('#random7').click(function(){
+    var total = students.length,
+        selected = Math.floor( Math.random() * total ),
+        i = 0;
+
+    console.log( "selected", selected );
+    //$display.animate( {"font-size": "12px"}, 0 );
+    // or
+    $display7.removeClass( "winner" );
+   
+
+
+    // improvement: use a for loop instead of a for..in
+    for (i=0; i<total; i++) {
+
+        console.log( "for", i );
+        // here is the trick, use an Immediately-Invoked Function Expression (IIFE)
+        // see http://benalman.com/news/2010/11/immediately-invoked-function-expression/
+        // play with the two button "IIFE" and "No IIFE" to see why this is important
+        setTimeout((function(i){
+            return function(){
+                // code here will be delayed
+                console.log( "timeout", i );
+                //$display.text( students[i].PLAYER_ID);
+                $display7.text(students[i].PLAYER_ID+1+'-'+ students[i].PLAYER_Name.toUpperCase() );
+               
+
+                if( i === selected 
+                    && $display7.text() != $display.text()
+                     && $display7.text() != $display1.text()
+                      && $display7.text() != $display2.text()
+                       && $display7.text() != $display3.text()
+                        && $display7.text() != $display4.text()
+                         && $display7.text() != $display5.text()
+                          && $display7.text() != $display6.text()
+                           && $display7.text() != $display8.text() 
+                            && $display7.text() != $display9.text()
+                
+                
+                
+                
+                 ) {
+                    //$display.animate( {"font-size": "30px"}, "fast" );
+                    // or
+                    $display7.addClass( "winner" );
+                  
+
+                }
+            };
+        }(i)), i*250);
+
+        // improvement: triple equal sign, always !
+        if( i === selected ) {
+            // code here will execute immediately
+            break;
+        }
+    }
+
+});
+// end Eighth Player
+
+// Ninth Player
+
+$('#random8').click(function(){
+    var total = students.length,
+        selected = Math.floor( Math.random() * total ),
+        i = 0;
+
+    console.log( "selected", selected );
+    //$display.animate( {"font-size": "12px"}, 0 );
+    // or
+    $display8.removeClass( "winner" );
+   
+
+
+    // improvement: use a for loop instead of a for..in
+    for (i=0; i<total; i++) {
+
+        console.log( "for", i );
+        // here is the trick, use an Immediately-Invoked Function Expression (IIFE)
+        // see http://benalman.com/news/2010/11/immediately-invoked-function-expression/
+        // play with the two button "IIFE" and "No IIFE" to see why this is important
+        setTimeout((function(i){
+            return function(){
+                // code here will be delayed
+                console.log( "timeout", i );
+                //$display.text( students[i].PLAYER_ID);
+                $display8.text(students[i].PLAYER_ID+1+'-'+ students[i].PLAYER_Name.toUpperCase() );
+               
+
+                if( i === selected   
+                    && $display8.text() != $display.text()
+                     && $display8.text() != $display1.text()
+                      && $display8.text() != $display2.text()
+                       && $display8.text() != $display3.text()
+                        && $display8.text() != $display4.text()
+                         && $display8.text() != $display5.text()
+                          && $display8.text() != $display6.text()
+                           && $display8.text() != $display7.text() 
+                            && $display8.text() != $display9.text()
+                
+                
+                
+                
+                 ) {
+                    //$display.animate( {"font-size": "30px"}, "fast" );
+                    // or
+                    $display8.addClass( "winner" );
+                  
+
+                }
+            };
+        }(i)), i*250);
+
+        // improvement: triple equal sign, always !
+        if( i === selected ) {
+            // code here will execute immediately
+            break;
+        }
+    }
+
+});
+// end Ninth Player
+// Tenth Player
+
+$('#random9').click(function(){
+    var total = students.length,
+        selected = Math.floor( Math.random() * total ),
+        i = 0;
+
+    console.log( "selected", selected );
+    //$display.animate( {"font-size": "12px"}, 0 );
+    // or
+    $display9.removeClass( "winner" );
+   
+
+
+    // improvement: use a for loop instead of a for..in
+    for (i=0; i<total; i++) {
+
+        console.log( "for", i );
+        // here is the trick, use an Immediately-Invoked Function Expression (IIFE)
+        // see http://benalman.com/news/2010/11/immediately-invoked-function-expression/
+        // play with the two button "IIFE" and "No IIFE" to see why this is important
+        setTimeout((function(i){
+            return function(){
+                // code here will be delayed
+                console.log( "timeout", i );
+                //$display.text( students[i].PLAYER_ID);
+                $display9.text(students[i].PLAYER_ID+1+'-'+ students[i].PLAYER_Name.toUpperCase() );
+               
+
+                if( i === selected 
+                    && $display9.text() != $display.text()
+                     && $display9.text() != $display1.text()
+                      && $display9.text() != $display2.text()
+                       && $display9.text() != $display3.text()
+                        && $display9.text() != $display4.text()
+                         && $display9.text() != $display5.text()
+                          && $display9.text() != $display6.text()
+                           && $display9.text() != $display7.text() 
+                            && $display9.text() != $display8.text()
+                
+                
+                
+                
+                 ) {
+                    //$display.animate( {"font-size": "30px"}, "fast" );
+                    // or
+                    $display9.addClass( "winner" );
+                  
+
+                }
+            };
+        }(i)), i*250);
+
+        // improvement: triple equal sign, always !
+        if( i === selected ) {
+            // code here will execute immediately
+            break;
+        }
+    }
+
+});
+// end Tenth Player

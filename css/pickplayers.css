@@ -5,3 +5,12 @@ div {
 div.winner {
     font-size: 30px;
 }
+.btn{
+    width: 260px;
+}
+.row{
+    margin: 20px;
+}
+div.col-md-6{
+    height: 120px;
+}
