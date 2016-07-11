@@ -56,6 +56,7 @@ div.wrong1,div.wrong2,div.wrong3{
     position: absolute;
     top: -10px;
     margin-left: 6px;
+    display: none;
 } 
    
 
