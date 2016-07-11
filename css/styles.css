@@ -50,7 +50,9 @@ div.icon > p{
     margin-top: 17px;
 }
 
-div.wrong1,div.wrong2,div.wrong3{
+div.wrong1,
+div.wrong2,
+div.wrong3{
         font-size: 52px;
     color: red;
     position: absolute;

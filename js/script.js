@@ -7,6 +7,19 @@ $( document ).ready(function() {
     $('div.top').height(topHeight);
      $('div.bottom').height(bottomHeight);
 
-$('div.wrong').display();
+
+$('#manager').click(function(){
+$('#wrong1').toggle();
+});
+
+$('#saba7').click(function(){
+$('#wrong2').toggle();
+});
+
+
+$('#remove').click(function(){
+$('#wrong3').toggle();
+});
+
 
 });
