@@ -1,0 +1,84 @@
+
+div.top {
+   background-color: #525659;
+}
+div.bottom{
+    background-color: black;
+
+}
+
+div.right{
+float: right;
+
+}
+
+div.left{
+    float: left;
+}
+
+div.circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-left: 60px;
+    position: relative;
+    
+}
+div.top-circle{
+    margin-top: 60px;
+}
+
+div.icon{
+    color: white;
+    margin-top: 0px;
+    margin-left: 12px;
+    font-size: 38px;
+    
+}
+div.icon > img {
+ width: 34px;
+    height: 43px;
+    margin-bottom: 25px;
+}
+
+div.icon > p{
+    font-size: 14px;
+    margin-top: 17px;
+}
+
+div.wrong1,div.wrong2,div.wrong3{
+        font-size: 52px;
+    color: red;
+    position: absolute;
+    top: -10px;
+    margin-left: 6px;
+} 
+   
+
+div.wrapper-right{
+    padding-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.finished{
+    background-color: rgba(250,176,5,0.9);
+
+}
+div.first-wrapper-right{
+    margin-top: 60px;
+}
+
+img.goal{
+padding-right: 20px;
+}
+
+
+
+
+div.logo{
+    margin-top: 30px;
+}
