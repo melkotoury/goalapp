@@ -79,21 +79,29 @@ img.questiontoprightwrong{
         position: absolute;
     margin-top: 152px;
     margin-left: -77px;
+        opacity: 0.5;
+
 }
 img.questiontopleftwrong{
         position: absolute;
     margin-top: 152px;
-    margin-left: -569px
+    margin-left: -569px;
+        opacity: 0.5;
+
 }
 img.questionbottomleftwrong{
     position: absolute;
     margin-top: 229px;
     margin-left: -569px;
+        opacity: 0.5;
+
 }
 img.questionbottomrightwrong{
         position: absolute;
     margin-top: 229px;
     margin-left: -74px;
+        opacity: 0.5;
+
 }
 
 /*right answers = green*/
@@ -101,21 +109,31 @@ img.questiontopleftright{
         position: absolute;
     margin-top: 152px;
     margin-left: -182px;
+        opacity: 0.5;
+            opacity: 0.5;
+
+
 }
 img.questiontoprightright{
     position: absolute;
     margin-top: 152px;
     margin-left: 313px;
+        opacity: 0.5;
+
 }
 img.questionbottomrightright{
 position: absolute;
     margin-top: 230px;
     margin-left: 313px;
+        opacity: 0.5;
+
 }
 img.questionbottomleftright{
 position: absolute;
     margin-top: 230px;
     margin-left: -182px;
+        opacity: 0.5;
+
 }
 
 /*question selected= orange*/
@@ -124,16 +142,22 @@ img.questiontopleftselected{
         position: absolute;
     top: 152px;
     left: 201px;
+    opacity: 0.99;
+
 }
 img.questiontoprightselected{
         position: absolute;
     top: 152px;
     left: 697px;
+    opacity: 0.99;
+
 }
 img.questionbottomrightselected{
     position: absolute;
     top: 229px;
     left: 697px;
+    opacity: 0.99;
+
 
 }
 
@@ -141,4 +165,45 @@ img.questionbottomleftselected{
     position: absolute;
     top: 229px;
     left: 201px;
+    opacity: 0.99;
+
+}
+
+
+/*question text*/
+div.question-text>p{
+    position: absolute;
+    right: 521px;
+    top: 38px;
+    color: white;
+    font-size: 3.2em;
+}
+
+div.answer-text1{
+        position: absolute;
+    top: 161px;
+    left: 367px;
+    color: white;
+    font-size: 2.2em;
+}
+div.answer-text2{
+   position: absolute;
+    top: 161px;
+    left: 873px;
+    color: white;
+    font-size: 2.2em;
+}
+div.answer-text3{
+       position: absolute;
+    top: 237px;
+    left: 367px;
+    color: white;
+    font-size: 2.2em;
+}
+div.answer-text4{
+        position: absolute;
+    top: 237px;
+    left: 873px;
+    color: white;
+    font-size: 2.2em;
 }
