@@ -61,8 +61,84 @@ div.first-wrapper-right {
 
 
 div.question {
+    position: relative;
   height: 306px;
     width: 100%;
     background: url("../img/question/Question.png") no-repeat;
     float: left;
+}
+
+/*question indicators*/
+img.questionselected,
+img.questionright,
+img.questionwrong{
+    display: none;
+}
+/*wrong answers = red */
+img.questiontoprightwrong{
+        position: absolute;
+    margin-top: 152px;
+    margin-left: -77px;
+}
+img.questiontopleftwrong{
+        position: absolute;
+    margin-top: 152px;
+    margin-left: -569px
+}
+img.questionbottomleftwrong{
+    position: absolute;
+    margin-top: 229px;
+    margin-left: -569px;
+}
+img.questionbottomrightwrong{
+        position: absolute;
+    margin-top: 229px;
+    margin-left: -74px;
+}
+
+/*right answers = green*/
+img.questiontopleftright{
+        position: absolute;
+    margin-top: 152px;
+    margin-left: -182px;
+}
+img.questiontoprightright{
+    position: absolute;
+    margin-top: 152px;
+    margin-left: 313px;
+}
+img.questionbottomrightright{
+position: absolute;
+    margin-top: 230px;
+    margin-left: 313px;
+}
+img.questionbottomleftright{
+position: absolute;
+    margin-top: 230px;
+    margin-left: -182px;
+}
+
+/*question selected= orange*/
+
+img.questiontopleftselected{
+        position: absolute;
+    top: 152px;
+    left: 201px;
+}
+img.questiontoprightselected{
+        position: absolute;
+    top: 152px;
+    left: 697px;
+}
+img.questionbottomrightselected{
+    position: absolute;
+    top: 229px;
+    left: 697px;
+
+}
+
+img.questionbottomleftselected{
+    position: absolute;
+    top: 229px;
+    left: 201px;
 }
