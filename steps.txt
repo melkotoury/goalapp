@@ -1,0 +1,13 @@
+1-click on an answer to select an answer with the orange background
+2-i will check whether the selected is the same as the answer or not 
+3-if it's the same as answer then i will replace orange with green
+4-if it's not the same as answer then i will replace orange with red
+5-if it's the same as answer then i will replace the logo with goal logo
+6-5050 i will check the correct answer and delete any of the other answers
+7-i will check if the text is big , i will replace with class answer-big  (15)
+8-i will check if the text is big in question , i will replace it with question big (28)
+9- when clicking on the ball , next question will appear
+10-if the answer is correct , the right image will change to the pic with goal in the net
+11-if the answer is inccorrect , the right image will change to the default
+12-the current question will be in orange
+13-audio allah 3alik if answer correct, audio alashet menak if answer is not correct
