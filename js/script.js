@@ -418,7 +418,7 @@ $('#answer-d').click(function(){
 
 // display first time first question and answers
 changeQuestionTextSize(currentQuestion);
-
+changeAnswerTextSize(currentQuestion);
         $('#q').text(questions[currentQuestion].question);
         $('#a').text(questions[currentQuestion].options['0']);
         $('#b').text(questions[currentQuestion].options['1']);
@@ -437,7 +437,7 @@ $('#question-q').click(function(){
 
       //change question text size
     changeQuestionTextSize(currentQuestion);
-   // changeAnswerTextSize(currentQuestion);
+    changeAnswerTextSize(currentQuestion);
     //get the user answered answer as a,b,c,d
     answer=getAnswer(classorange);
     //console.log(answer);
@@ -515,18 +515,34 @@ $('#question-q').click(function(){
      * It changes the classes from question-text to question-text-big (smaller font-size)
      */
     function changeAnswerTextSize(currentQuestion) {
-        if (questionIndex[currentQuestion].answer[0].length >15) {
+        console.log("first answer length: "+questions[currentQuestion].options[0].length);
+        if (questions[currentQuestion].options[0].length >22) {
             $('#a').removeClass('answer-text1');
             $('#a').addClass('answer-text1-big');
-        }  if (questionIndex[currentQuestion].answer[1].length >15) {
+        }else{
+              $('#a').removeClass('answer-text1-big');
+            $('#a').addClass('answer-text1');
+        } 
+         if (questions[currentQuestion].options[1].length >22) {
             $('#b').removeClass('answer-text2');
             $('#b').addClass('answer-text2-big');
-        }  if (answerID === 'c' && questionIndex[currentQuestion].answer[2].length >15) {
+        }else{
+              $('#b').removeClass('answer-text2-big');
+            $('#b').addClass('answer-text2');
+        } 
+         if (questions[currentQuestion].options[2].length >22) {
             $('#c').removeClass('answer-text3');
             $('#c').addClass('answer-text3-big');
-        }  if (answerID === 'd' && questionIndex[currentQuestion].answer[3].length >15) {
+        }else{
+              $('#c').removeClass('answer-text3-big');
+            $('#c').addClass('answer-text3');
+        } 
+         if (questions[currentQuestion].options[3].length >22) {
             $('#d').removeClass('answer-text4');
             $('#d').addClass('answer-text4-big');
+        }else{
+              $('#d').removeClass('answer-text4-big');
+            $('#d').addClass('answer-text4');
         }
 
     }
