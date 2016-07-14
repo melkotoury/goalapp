@@ -18,6 +18,16 @@ $(document).ready(function () {
     $('#manager').click(function () {
         if (manager_flag == 0) {
             $('#manager_img').attr("src", "img/left/manager_X.png");
+
+
+// countdown
+
+
+// end countdown
+
+
+
+
             manager_flag = 1;
         } else if (manager_flag == 1) {
             $('#manager_img').attr("src", "img/left/ask_manager.png");
@@ -418,11 +428,13 @@ $('#answer-d').click(function(){
 
 // click on question next question click listener 
 $('#question-q').click(function(){
-    //change question text size
-    changeQuestionTextSize(currentQuestion);
+  
     //increment question index
     currentQuestion ++;
     //console.log(classorange);
+
+      //change question text size
+    changeQuestionTextSize(currentQuestion);
     //get the user answered answer as a,b,c,d
     answer=getAnswer(classorange);
     //console.log(answer);
@@ -483,6 +495,7 @@ $('#question-q').click(function(){
     function changeQuestionTextSize(currentQuestion) {
         var question=questions[currentQuestion].question;
         console.log("question # "+ question);
+        console.log("question string length= "+question.length);
         if(question.length >27){
              $('q').removeClass('question-text');
         $('q').addClass('question-text-big');
