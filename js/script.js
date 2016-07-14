@@ -7,7 +7,7 @@ $(document).ready(function () {
     var manager_flag = 0;
     var saba7_flag = 0;
     var remove_flag = 0;
-    var answera_flag=0 ,answerb_flag=0 ,answerc_flag=0 ,answerd_flag=0
+    var answera_flag = 0, answerb_flag = 0, answerc_flag = 0, answerd_flag = 0
 
 
     $('div.top').height(topHeight);
@@ -20,10 +20,10 @@ $(document).ready(function () {
             $('#manager_img').attr("src", "img/left/manager_X.png");
 
 
-// countdown
+            // countdown
 
 
-// end countdown
+            // end countdown
 
 
 
@@ -290,164 +290,167 @@ $(document).ready(function () {
     // $('#c').text(questions[0].options['2']);
     // $('#d').text(questions[0].options['3']);
 
-    var answer=questions[currentQuestion].answer;
-    var classorange='';
+    var answer = questions[currentQuestion].answer;
+    var classorange = '';
 
-// answers click listeners
-$('#answer-a').click(function(){
-    if(answera_flag===0){
-      $('#red').hide();
-      $('#green').hide();     
-      $('#orange').removeClass("questionselected"); 
-      $('#orange').removeClass("questiontoprightselected");
-      $('#orange').removeClass("questionbottomleftselected");
-      $('#orange').removeClass("questionbottomrightselected");
-      $('#orange').addClass("questiontopleftselected");
-      classorange=$('#orange').attr("class");
-      answera_flag=1;
-      answerb_flag=0;
-      answerc_flag=0
-      answerd_flag=0;
-    }else if(answera_flag===1){
+    // answers click listeners
+    $('#answer-a').click(function () {
+        if (answera_flag === 0) {
             $('#red').hide();
-      $('#green').hide();     
-      $('#orange').removeClass("questiontoprightselected");
-      $('#orange').removeClass("questionbottomleftselected");
-      $('#orange').removeClass("questionbottomrightselected");
-      $('#orange').removeClass("questiontopleftselected");
-      $('#orange').addClass("questionselected");
-      classorange=$('#orange').attr("class");
-      answera_flag=0;
-      answerb_flag=0;
-      answerc_flag=0
-      answerd_flag=0;
-    }
-    
-
-});
-$('#answer-b').click(function(){
-      if(answerb_flag===0){
-      $('#red').hide();
-      $('#green').hide();     
-      $('#orange').removeClass("questionselected"); 
-      $('#orange').removeClass("questiontopleftselected");
-      $('#orange').removeClass("questionbottomleftselected");
-      $('#orange').removeClass("questionbottomrightselected");
-      $('#orange').addClass("questiontoprightselected");
-      classorange=$('#orange').attr("class");
-      answerb_flag=1;
-      answera_flag=0;
-      answerc_flag=0
-      answerd_flag=0;
-    }else if(answerb_flag===1){
+            $('#green').hide();
+            $('#orange').removeClass("questionselected");
+            $('#orange').removeClass("questiontoprightselected");
+            $('#orange').removeClass("questionbottomleftselected");
+            $('#orange').removeClass("questionbottomrightselected");
+            $('#orange').addClass("questiontopleftselected");
+            classorange = $('#orange').attr("class");
+            answera_flag = 1;
+            answerb_flag = 0;
+            answerc_flag = 0
+            answerd_flag = 0;
+        } else if (answera_flag === 1) {
             $('#red').hide();
-      $('#green').hide();     
-      $('#orange').removeClass("questiontopleftselected");
-      $('#orange').removeClass("questionbottomleftselected");
-      $('#orange').removeClass("questionbottomrightselected");
-      $('#orange').removeClass("questiontoprighttselected");
-      $('#orange').addClass("questionselected");
-      classorange=$('#orange').attr("class");
-      answerb_flag=0;
-      answera_flag=0;
-      answerc_flag=0
-      answerd_flag=0;
-    }
+            $('#green').hide();
+            $('#orange').removeClass("questiontoprightselected");
+            $('#orange').removeClass("questionbottomleftselected");
+            $('#orange').removeClass("questionbottomrightselected");
+            $('#orange').removeClass("questiontopleftselected");
+            $('#orange').addClass("questionselected");
+            classorange = $('#orange').attr("class");
+            answera_flag = 0;
+            answerb_flag = 0;
+            answerc_flag = 0
+            answerd_flag = 0;
+        }
 
-});
-$('#answer-c').click(function(){
-        if(answerc_flag===0){
-      $('#red').hide();
-      $('#green').hide();     
-      $('#orange').removeClass("questionselected"); 
-      $('#orange').removeClass("questiontopleftselected");
-      $('#orange').removeClass("questionbottomleftselected");
-      $('#orange').removeClass("questionbottomrightselected");
-      $('#orange').addClass("questionbottomleftselected");
-      classorange=$('#orange').attr("class");
-      answerc_flag=1;
-      answera_flag=0;
-      answerb_flag=0
-      answerd_flag=0;
-    }else if(answerc_flag===1){
+
+    });
+    $('#answer-b').click(function () {
+        if (answerb_flag === 0) {
             $('#red').hide();
-      $('#green').hide();     
-      $('#orange').removeClass("questiontopleftselected");
-      $('#orange').removeClass("questiontoprightselected");
-      $('#orange').removeClass("questionbottomrightselected");
-      $('#orange').removeClass("questionbottomleftselected");
-      $('#orange').addClass("questionselected");
-      classorange=$('#orange').attr("class");
-      answerc_flag=0;
-      answera_flag=0;
-      answerb_flag=0
-      answerd_flag=0;
-    }
-
-});
-$('#answer-d').click(function(){
-         if(answerd_flag===0){
-      $('#red').hide();
-      $('#green').hide();     
-      $('#orange').removeClass("questionselected"); 
-      $('#orange').removeClass("questiontopleftselected");
-      $('#orange').removeClass("questionbottomleftselected");
-      $('#orange').removeClass("questionbottomrightselected");
-      $('#orange').addClass("questionbottomrightselected");
-      classorange=$('#orange').attr("class");
-      answerd_flag=1;
-      answera_flag=0;
-      answerb_flag=0
-      answerc_flag=0;
-    }else if(answerd_flag===1){
+            $('#green').hide();
+            $('#orange').removeClass("questionselected");
+            $('#orange').removeClass("questiontopleftselected");
+            $('#orange').removeClass("questionbottomleftselected");
+            $('#orange').removeClass("questionbottomrightselected");
+            $('#orange').addClass("questiontoprightselected");
+            classorange = $('#orange').attr("class");
+            answerb_flag = 1;
+            answera_flag = 0;
+            answerc_flag = 0
+            answerd_flag = 0;
+        } else if (answerb_flag === 1) {
             $('#red').hide();
-      $('#green').hide();     
-      $('#orange').removeClass("questiontopleftselected");
-      $('#orange').removeClass("questiontoprightselected");
-      $('#orange').removeClass("questionbottomrightselected");
-      $('#orange').removeClass("questionbottomleftselected");
-      $('#orange').addClass("questionselected");
-      classorange=$('#orange').attr("class");
-      answerd_flag=0;
-      answera_flag=0;
-      answerb_flag=0
-      answerc_flag=0;
-    }
-      
-});
+            $('#green').hide();
+            $('#orange').removeClass("questiontopleftselected");
+            $('#orange').removeClass("questionbottomleftselected");
+            $('#orange').removeClass("questionbottomrightselected");
+            $('#orange').removeClass("questiontoprighttselected");
+            $('#orange').addClass("questionselected");
+            classorange = $('#orange').attr("class");
+            answerb_flag = 0;
+            answera_flag = 0;
+            answerc_flag = 0
+            answerd_flag = 0;
+        }
 
-// display first time first question and answers
-changeQuestionTextSize(currentQuestion);
-changeAnswerTextSize(currentQuestion);
-        $('#q').text(questions[currentQuestion].question);
-        $('#a').text(questions[currentQuestion].options['0']);
-        $('#b').text(questions[currentQuestion].options['1']);
-        $('#c').text(questions[currentQuestion].options['2']);
-        $('#d').text(questions[currentQuestion].options['3']);
+    });
+    $('#answer-c').click(function () {
+        if (answerc_flag === 0) {
+            $('#red').hide();
+            $('#green').hide();
+            $('#orange').removeClass("questionselected");
+            $('#orange').removeClass("questiontopleftselected");
+            $('#orange').removeClass("questionbottomleftselected");
+            $('#orange').removeClass("questionbottomrightselected");
+            $('#orange').addClass("questionbottomleftselected");
+            classorange = $('#orange').attr("class");
+            answerc_flag = 1;
+            answera_flag = 0;
+            answerb_flag = 0
+            answerd_flag = 0;
+        } else if (answerc_flag === 1) {
+            $('#red').hide();
+            $('#green').hide();
+            $('#orange').removeClass("questiontopleftselected");
+            $('#orange').removeClass("questiontoprightselected");
+            $('#orange').removeClass("questionbottomrightselected");
+            $('#orange').removeClass("questionbottomleftselected");
+            $('#orange').addClass("questionselected");
+            classorange = $('#orange').attr("class");
+            answerc_flag = 0;
+            answera_flag = 0;
+            answerb_flag = 0
+            answerd_flag = 0;
+        }
 
+    });
+    $('#answer-d').click(function () {
+        if (answerd_flag === 0) {
+            $('#red').hide();
+            $('#green').hide();
+            $('#orange').removeClass("questionselected");
+            $('#orange').removeClass("questiontopleftselected");
+            $('#orange').removeClass("questionbottomleftselected");
+            $('#orange').removeClass("questionbottomrightselected");
+            $('#orange').addClass("questionbottomrightselected");
+            classorange = $('#orange').attr("class");
+            answerd_flag = 1;
+            answera_flag = 0;
+            answerb_flag = 0
+            answerc_flag = 0;
+        } else if (answerd_flag === 1) {
+            $('#red').hide();
+            $('#green').hide();
+            $('#orange').removeClass("questiontopleftselected");
+            $('#orange').removeClass("questiontoprightselected");
+            $('#orange').removeClass("questionbottomrightselected");
+            $('#orange').removeClass("questionbottomleftselected");
+            $('#orange').addClass("questionselected");
+            classorange = $('#orange').attr("class");
+            answerd_flag = 0;
+            answera_flag = 0;
+            answerb_flag = 0
+            answerc_flag = 0;
+        }
 
+    });
 
-
-// click on question next question click listener 
-$('#question-q').click(function(){
-  
-    //increment question index
-    currentQuestion ++;
-    //console.log(classorange);
-
-      //change question text size
+    // display first time first question and answers
     changeQuestionTextSize(currentQuestion);
     changeAnswerTextSize(currentQuestion);
-    //get the user answered answer as a,b,c,d
-    answer=getAnswer(classorange);
-    //console.log(answer);
+    //updateRightSidebar(currentQuestion);
 
-    //display next question and answer after timeout
-    displayQuestion(currentQuestion);
-    displayAnswers(currentQuestion);
+    $('#q').text(questions[currentQuestion].question);
+    $('#a').text(questions[currentQuestion].options['0']);
+    $('#b').text(questions[currentQuestion].options['1']);
+    $('#c').text(questions[currentQuestion].options['2']);
+    $('#d').text(questions[currentQuestion].options['3']);
 
-    
-});
+
+
+
+    // click on question next question click listener 
+    $('#question-q').click(function () {
+
+        //increment question index
+        currentQuestion++;
+        //console.log(classorange);
+
+        //change question text size
+        changeQuestionTextSize(currentQuestion);
+        changeAnswerTextSize(currentQuestion);
+        //get the user answered answer as a,b,c,d
+        answer = getAnswer(classorange);
+        //console.log(answer);
+//Update righsidebar with current question
+// updateRightSidebar(currentQuestion);
+        //display next question and answer after timeout
+        displayQuestion(currentQuestion);
+        displayAnswers(currentQuestion);
+
+
+    });
     /**
      * function: getAnswer
      * parameter: answerID
@@ -484,11 +487,11 @@ $('#question-q').click(function(){
         $('#b').text(questions[currentQuestion].options['1']);
         $('#c').text(questions[currentQuestion].options['2']);
         $('#d').text(questions[currentQuestion].options['3']);
-     $('#orange').removeClass("questiontopleftselected");
-      $('#orange').removeClass("questiontoprightselected");
-      $('#orange').removeClass("questionbottomrightselected");
-      $('#orange').removeClass("questionbottomleftselected");
-      $('#orange').addClass("questionselected");
+        $('#orange').removeClass("questiontopleftselected");
+        $('#orange').removeClass("questiontoprightselected");
+        $('#orange').removeClass("questionbottomrightselected");
+        $('#orange').removeClass("questionbottomleftselected");
+        $('#orange').addClass("questionselected");
     }
     /**
      * function: changeQuestionTextSize
@@ -496,52 +499,150 @@ $('#question-q').click(function(){
      * It changes the classes from question-text to question-text-big (smaller font-size)
      */
     function changeQuestionTextSize(currentQuestion) {
-        var question=questions[currentQuestion].question;
-        console.log("question # "+ question);
-        console.log("question string length= "+question.length);
-        if(question.length >27){
-             $('#q').removeClass('question-text');
-        $('#q').addClass('question-text-big');
-        }else{
-                $('#q').removeClass('question-text-big');
-        $('#q').addClass('question-text');
+        var question = questions[currentQuestion].question;
+        console.log("question # " + question);
+        console.log("question string length= " + question.length);
+        if (question.length > 27) {
+            $('#q').removeClass('question-text');
+            $('#q').addClass('question-text-big');
+        } else {
+            $('#q').removeClass('question-text-big');
+            $('#q').addClass('question-text');
         }
-       
+
     }
 
+    /**
+     * function updateRightSidebar
+     * parameter currentQuestion
+     */
+
+    function updateRightSidebar(currentQuestion) {
+        switch (currentQuestion) {
+            case 0:
+            $('#1>img').attr('src','img/right/current_question.png');
+                break;
+            case 1:
+                        $('#2>img').attr('src','img/right/current_question.png');
+
+                break;
+            case 2:
+            $('#3>img').attr('src','img/right/current_question.png');
+
+                break;
+            case 3:
+            $('#4>img').attr('src','img/right/current_question.png');
+
+                break;
+            case 4:
+            $('#5>img').attr('src','img/right/current_question.png');
+
+                break;
+            case 5:
+            $('#6>img').attr('src','img/right/current_question.png');
+
+                break;
+            case 6:
+            $('#7>img').attr('src','img/right/current_question.png');
+
+                break;
+            case 7:
+            $('#8>img').attr('src','img/right/current_question.png');
+
+                break;
+            case 8:
+            $('#9>img').attr('src','img/right/current_question.png');
+
+                break;
+            case 9:
+            $('#10>img').attr('src','img/right/current_question.png');
+
+                break;
+            case 10:
+            $('#11>img').attr('src','img/right/current_question.png');
+
+                break;
+            case 11:
+            $('#12>img').attr('src','img/right/current_question.png');
+
+                break;
+            case 12:
+            $('#13>img').attr('src','img/right/current_question.png');
+
+                break;
+            case 13:
+            $('#14>img').attr('src','img/right/current_question.png');
+
+                break;
+            case 14:
+            $('#5>img').attr('src','img/right/current_question.png');
+
+                break;
+           
+            case 15:
+            $('#16>img').attr('src','img/right/current_question.png');
+
+                break;
+            case 16:
+            $('#17>img').attr('src','img/right/current_question.png');
+
+                break;
+            case 17:
+            $('#18>img').attr('src','img/right/current_question.png');
+
+                break;
+            case 18:
+            $('#19>img').attr('src','img/right/current_question.png');
+
+                break;
+            case 19:
+            $('#20>img').attr('src','img/right/current_question.png');
+
+                break;
+            case 20:
+            $('#21>img').attr('src','img/right/current_question.png');
+
+                break;
+
+            default:
+                        $('#1>img').attr('src','img/right/current_question.png');
+
+                break;
+        }
+    }
     /**
      * function: changeAnswerTextSize
      * parameter: answer
      * It changes the classes from question-text to question-text-big (smaller font-size)
      */
     function changeAnswerTextSize(currentQuestion) {
-        console.log("first answer length: "+questions[currentQuestion].options[0].length);
-        if (questions[currentQuestion].options[0].length >22) {
+        console.log("first answer length: " + questions[currentQuestion].options[0].length);
+        if (questions[currentQuestion].options[0].length > 22) {
             $('#a').removeClass('answer-text1');
             $('#a').addClass('answer-text1-big');
-        }else{
-              $('#a').removeClass('answer-text1-big');
+        } else {
+            $('#a').removeClass('answer-text1-big');
             $('#a').addClass('answer-text1');
-        } 
-         if (questions[currentQuestion].options[1].length >22) {
+        }
+        if (questions[currentQuestion].options[1].length > 22) {
             $('#b').removeClass('answer-text2');
             $('#b').addClass('answer-text2-big');
-        }else{
-              $('#b').removeClass('answer-text2-big');
+        } else {
+            $('#b').removeClass('answer-text2-big');
             $('#b').addClass('answer-text2');
-        } 
-         if (questions[currentQuestion].options[2].length >22) {
+        }
+        if (questions[currentQuestion].options[2].length > 22) {
             $('#c').removeClass('answer-text3');
             $('#c').addClass('answer-text3-big');
-        }else{
-              $('#c').removeClass('answer-text3-big');
+        } else {
+            $('#c').removeClass('answer-text3-big');
             $('#c').addClass('answer-text3');
-        } 
-         if (questions[currentQuestion].options[3].length >22) {
+        }
+        if (questions[currentQuestion].options[3].length > 22) {
             $('#d').removeClass('answer-text4');
             $('#d').addClass('answer-text4-big');
-        }else{
-              $('#d').removeClass('answer-text4-big');
+        } else {
+            $('#d').removeClass('answer-text4-big');
             $('#d').addClass('answer-text4');
         }
 
@@ -551,52 +652,52 @@ $('#question-q').click(function(){
      * function :answerIsCorrect(currentQuestion,answerID)
      * parameter: currentQuestion and answerID
      */
-    function answerIsCorrect(currentQuestion,answerID) {
+    function answerIsCorrect(currentQuestion, answerID) {
 
         //replace orange with green
-        if(answerID==='a' && answer==='a'){
-        $('#orange').hide();
-        $('#red').hide();
-        $('#green').addClass("questiontopleftselected");
-        } else if(answerID==='b'&& answer==='b'){
-        $('#orange').hide();
-        $('#red').hide();
-        $('#green').addClass("questiontoprightselected");
-        } else if(answerID==='c' && answer==='c'){
-        $('#orange').hide();
-        $('#red').hide();
-        $('#green').addClass("questionbottomleftselected");
-        }else if(answerID==='d' && answer==='d'){
-        $('#orange').hide();
-        $('#red').hide();
-        $('#green').addClass("questionbottomrightselected");
+        if (answerID === 'a' && answer === 'a') {
+            $('#orange').hide();
+            $('#red').hide();
+            $('#green').addClass("questiontopleftselected");
+        } else if (answerID === 'b' && answer === 'b') {
+            $('#orange').hide();
+            $('#red').hide();
+            $('#green').addClass("questiontoprightselected");
+        } else if (answerID === 'c' && answer === 'c') {
+            $('#orange').hide();
+            $('#red').hide();
+            $('#green').addClass("questionbottomleftselected");
+        } else if (answerID === 'd' && answer === 'd') {
+            $('#orange').hide();
+            $('#red').hide();
+            $('#green').addClass("questionbottomrightselected");
         }
     }
 
 
-     /**
-     * function :answerIsWrong(currentQuestion,answerID)
-     * parameter: currentQuestion and answerID
-     */
-    function answerIsWrong(currentQuestion,answerID) {
+    /**
+    * function :answerIsWrong(currentQuestion,answerID)
+    * parameter: currentQuestion and answerID
+    */
+    function answerIsWrong(currentQuestion, answerID) {
 
         //replace orange with green
-        if(answerID==='a' && answer!='a'){
-        $('#orange').hide();
-        $('#green').hide();
-        $('#red').addClass("questiontopleftselected");
-        } else if(answerID==='b'&& answer !='b'){
-        $('#orange').hide();
-        $('#green').hide();
-        $('#red').addClass("questiontoprightselected");
-        } else if(answerID==='c' && answer !='c'){
-        $('#orange').hide();
-        $('#green').hide();
-        $('#red').addClass("questionbottomleftselected");
-        }else if(answerID==='d' && answer !='d'){
-        $('#orange').hide();
-        $('#green').hide();
-        $('#red').addClass("questionbottomrightselected");
+        if (answerID === 'a' && answer != 'a') {
+            $('#orange').hide();
+            $('#green').hide();
+            $('#red').addClass("questiontopleftselected");
+        } else if (answerID === 'b' && answer != 'b') {
+            $('#orange').hide();
+            $('#green').hide();
+            $('#red').addClass("questiontoprightselected");
+        } else if (answerID === 'c' && answer != 'c') {
+            $('#orange').hide();
+            $('#green').hide();
+            $('#red').addClass("questionbottomleftselected");
+        } else if (answerID === 'd' && answer != 'd') {
+            $('#orange').hide();
+            $('#green').hide();
+            $('#red').addClass("questionbottomrightselected");
         }
     }
 });
