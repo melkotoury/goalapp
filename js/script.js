@@ -417,6 +417,8 @@ $('#answer-d').click(function(){
 });
 
 // display first time first question and answers
+changeQuestionTextSize(currentQuestion);
+
         $('#q').text(questions[currentQuestion].question);
         $('#a').text(questions[currentQuestion].options['0']);
         $('#b').text(questions[currentQuestion].options['1']);
@@ -435,6 +437,7 @@ $('#question-q').click(function(){
 
       //change question text size
     changeQuestionTextSize(currentQuestion);
+   // changeAnswerTextSize(currentQuestion);
     //get the user answered answer as a,b,c,d
     answer=getAnswer(classorange);
     //console.log(answer);
@@ -497,11 +500,11 @@ $('#question-q').click(function(){
         console.log("question # "+ question);
         console.log("question string length= "+question.length);
         if(question.length >27){
-             $('q').removeClass('question-text');
-        $('q').addClass('question-text-big');
+             $('#q').removeClass('question-text');
+        $('#q').addClass('question-text-big');
         }else{
-                $('q').removeClass('question-text-big');
-        $('q').addClass('question-text');
+                $('#q').removeClass('question-text-big');
+        $('#q').addClass('question-text');
         }
        
     }
@@ -511,17 +514,17 @@ $('#question-q').click(function(){
      * parameter: answer
      * It changes the classes from question-text to question-text-big (smaller font-size)
      */
-    function changeAnswerTextSize(answerID) {
-        if (answerID === 'a') {
+    function changeAnswerTextSize(currentQuestion) {
+        if (questionIndex[currentQuestion].answer[0].length >15) {
             $('#a').removeClass('answer-text1');
             $('#a').addClass('answer-text1-big');
-        } else if (answerID === 'b') {
+        }  if (questionIndex[currentQuestion].answer[1].length >15) {
             $('#b').removeClass('answer-text2');
             $('#b').addClass('answer-text2-big');
-        } else if (answerID === 'c') {
+        }  if (answerID === 'c' && questionIndex[currentQuestion].answer[2].length >15) {
             $('#c').removeClass('answer-text3');
             $('#c').addClass('answer-text3-big');
-        } else if (answerID === 'd') {
+        }  if (answerID === 'd' && questionIndex[currentQuestion].answer[3].length >15) {
             $('#d').removeClass('answer-text4');
             $('#d').addClass('answer-text4-big');
         }
