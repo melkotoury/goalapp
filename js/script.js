@@ -419,7 +419,7 @@ $(document).ready(function () {
     // display first time first question and answers
     changeQuestionTextSize(currentQuestion);
     changeAnswerTextSize(currentQuestion);
-    //updateRightSidebar(currentQuestion);
+    updateRightSidebar(currentQuestion);
 
     $('#q').text(questions[currentQuestion].question);
     $('#a').text(questions[currentQuestion].options['0']);
@@ -444,7 +444,7 @@ $(document).ready(function () {
         answer = getAnswer(classorange);
         //console.log(answer);
 //Update righsidebar with current question
-// updateRightSidebar(currentQuestion);
+ updateRightSidebar(currentQuestion);
         //display next question and answer after timeout
         displayQuestion(currentQuestion);
         displayAnswers(currentQuestion);
@@ -520,92 +520,92 @@ $(document).ready(function () {
     function updateRightSidebar(currentQuestion) {
         switch (currentQuestion) {
             case 0:
-            $('#1>img').attr('src','img/right/current_question.png');
+            $('img.goal1').attr('src','img/right/current_question.png');
                 break;
             case 1:
-                        $('#2>img').attr('src','img/right/current_question.png');
+            $('img.goal2').attr('src','img/right/current_question.png');
 
                 break;
             case 2:
-            $('#3>img').attr('src','img/right/current_question.png');
+            $('img.goal3').attr('src','img/right/current_question.png');
 
                 break;
             case 3:
-            $('#4>img').attr('src','img/right/current_question.png');
+            $('img.goal4').attr('src','img/right/current_question.png');
 
                 break;
             case 4:
-            $('#5>img').attr('src','img/right/current_question.png');
+            $('img.goal5').attr('src','img/right/current_question.png');
 
                 break;
             case 5:
-            $('#6>img').attr('src','img/right/current_question.png');
+            $('img.goal6').attr('src','img/right/current_question.png');
 
                 break;
             case 6:
-            $('#7>img').attr('src','img/right/current_question.png');
+            $('img.goal7').attr('src','img/right/current_question.png');
 
                 break;
             case 7:
-            $('#8>img').attr('src','img/right/current_question.png');
+            $('img.goal8').attr('src','img/right/current_question.png');
 
                 break;
             case 8:
-            $('#9>img').attr('src','img/right/current_question.png');
+            $('img.goal9').attr('src','img/right/current_question.png');
 
                 break;
             case 9:
-            $('#10>img').attr('src','img/right/current_question.png');
+            $('img.goal10').attr('src','img/right/current_question.png');
 
                 break;
             case 10:
-            $('#11>img').attr('src','img/right/current_question.png');
+            $('img.goal11').attr('src','img/right/current_question.png');
 
                 break;
             case 11:
-            $('#12>img').attr('src','img/right/current_question.png');
+            $('img.goal12').attr('src','img/right/current_question.png');
 
                 break;
             case 12:
-            $('#13>img').attr('src','img/right/current_question.png');
+            $('img.goal13').attr('src','img/right/current_question.png');
 
                 break;
             case 13:
-            $('#14>img').attr('src','img/right/current_question.png');
+            $('img.goal14').attr('src','img/right/current_question.png');
 
                 break;
             case 14:
-            $('#5>img').attr('src','img/right/current_question.png');
+            $('img.goal15').attr('src','img/right/current_question.png');
 
                 break;
            
             case 15:
-            $('#16>img').attr('src','img/right/current_question.png');
+            $('img.goal16').attr('src','img/right/current_question.png');
 
                 break;
             case 16:
-            $('#17>img').attr('src','img/right/current_question.png');
+            $('img.goal17').attr('src','img/right/current_question.png');
 
                 break;
             case 17:
-            $('#18>img').attr('src','img/right/current_question.png');
+            $('img.goal18').attr('src','img/right/current_question.png');
 
                 break;
             case 18:
-            $('#19>img').attr('src','img/right/current_question.png');
+            $('img.goal19').attr('src','img/right/current_question.png');
 
                 break;
             case 19:
-            $('#20>img').attr('src','img/right/current_question.png');
+            $('img.goal20').attr('src','img/right/current_question.png');
 
                 break;
             case 20:
-            $('#21>img').attr('src','img/right/current_question.png');
+            $('img.goal21').attr('src','img/right/current_question.png');
 
                 break;
 
             default:
-                        $('#1>img').attr('src','img/right/current_question.png');
+                        $('img.goal1').attr('src','img/right/current_question.png');
 
                 break;
         }
