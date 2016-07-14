@@ -448,7 +448,7 @@ $(document).ready(function () {
         //display next question and answer after timeout
         displayQuestion(currentQuestion);
         displayAnswers(currentQuestion);
-
+isans
 
     });
     /**
@@ -461,8 +461,8 @@ $(document).ready(function () {
 
             return 'a';
         } else if (orange === 'questiontoprightselected') {
-            return 'b';
-        } else if (orange === 'questionbotttomleftselected') {
+            return 'b';        
+        } else if (orange === 'questionbottomleftselected') {
             return 'c';
         } else if (orange === 'questionbottomrightselected') {
             return 'd';
@@ -513,95 +513,197 @@ $(document).ready(function () {
     }
 
     /**
+     * function: isQuestionCorrect(currentQuestion)
+     */
+
+   function isQuestionCorrect(currentQuestion){
+       answer = getAnswer(classorange);
+       if (answer===questions[currentQuestion].answer) {
+                      console.log(answer +"is the answer i select where " + questions[currentQuestion].answer+ " is from the array");
+
+           return true;
+       }else {
+                      console.log(answer +"is the answer i select where " + questions[currentQuestion].answer+ " is from the array");
+
+           return false;
+       }
+       
+       
+    }
+
+    /**
      * function updateRightSidebar
      * parameter currentQuestion
      */
 
     function updateRightSidebar(currentQuestion) {
+    // var previousQuestionCorrect=isQuestionCorrect(currentQuestion-1);
+
         switch (currentQuestion) {
             case 0:
             $('img.goal1').attr('src','img/right/current_question.png');
+            
                 break;
             case 1:
             $('img.goal2').attr('src','img/right/current_question.png');
-
+            if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal1').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal1').attr('src','img/right/not_answered.png');
+            }
                 break;
             case 2:
             $('img.goal3').attr('src','img/right/current_question.png');
-
+             if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal2').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal2').attr('src','img/right/not_answered.png');
+            }
                 break;
             case 3:
             $('img.goal4').attr('src','img/right/current_question.png');
-
+ if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal3').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal3').attr('src','img/right/not_answered.png');
+            }
                 break;
             case 4:
             $('img.goal5').attr('src','img/right/current_question.png');
-
+ if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal4').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal4').attr('src','img/right/not_answered.png');
+            }
                 break;
             case 5:
             $('img.goal6').attr('src','img/right/current_question.png');
-
+ if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal5').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal5').attr('src','img/right/not_answered.png');
+            }
                 break;
             case 6:
             $('img.goal7').attr('src','img/right/current_question.png');
-
+ if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal6').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal6').attr('src','img/right/not_answered.png');
+            }
                 break;
             case 7:
             $('img.goal8').attr('src','img/right/current_question.png');
-
+ if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal7').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal7').attr('src','img/right/not_answered.png');
+            }
                 break;
             case 8:
             $('img.goal9').attr('src','img/right/current_question.png');
-
+ if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal8').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal8').attr('src','img/right/not_answered.png');
+            }
                 break;
             case 9:
             $('img.goal10').attr('src','img/right/current_question.png');
-
+ if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal9').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal9').attr('src','img/right/not_answered.png');
+            }
                 break;
             case 10:
             $('img.goal11').attr('src','img/right/current_question.png');
-
+ if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal10').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal10').attr('src','img/right/not_answered.png');
+            }
                 break;
             case 11:
             $('img.goal12').attr('src','img/right/current_question.png');
-
+ if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal11').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal11').attr('src','img/right/not_answered.png');
+            }
                 break;
             case 12:
             $('img.goal13').attr('src','img/right/current_question.png');
-
+if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal12').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal12').attr('src','img/right/not_answered.png');
+            }
                 break;
             case 13:
             $('img.goal14').attr('src','img/right/current_question.png');
-
+if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal13').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal13').attr('src','img/right/not_answered.png');
+            }
                 break;
             case 14:
             $('img.goal15').attr('src','img/right/current_question.png');
-
+if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal14').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal14').attr('src','img/right/not_answered.png');
+            }
                 break;
            
             case 15:
             $('img.goal16').attr('src','img/right/current_question.png');
-
+if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal15').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal15').attr('src','img/right/not_answered.png');
+            }
                 break;
             case 16:
             $('img.goal17').attr('src','img/right/current_question.png');
-
+if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal16').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal16').attr('src','img/right/not_answered.png');
+            }
                 break;
             case 17:
             $('img.goal18').attr('src','img/right/current_question.png');
-
+if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal17').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal17').attr('src','img/right/not_answered.png');
+            }
                 break;
             case 18:
             $('img.goal19').attr('src','img/right/current_question.png');
-
+if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal18').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal18').attr('src','img/right/not_answered.png');
+            }
                 break;
             case 19:
             $('img.goal20').attr('src','img/right/current_question.png');
-
+if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal19').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal19').attr('src','img/right/not_answered.png');
+            }
                 break;
             case 20:
             $('img.goal21').attr('src','img/right/current_question.png');
-
+if (isQuestionCorrect(currentQuestion-1)) {
+            $('img.goal20').attr('src','img/right/answered.png');
+            }else{
+            $('img.goal20').attr('src','img/right/not_answered.png');
+            }
                 break;
 
             default:
