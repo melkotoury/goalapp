@@ -73,7 +73,7 @@ $(document).ready(function () {
     var questions = [
         // question 0
         {
-            'answer': 'c',
+            'answer': 'b',
             'question': 'ايه أول أصناف زبادي/بودينج من دانون نزلت في مصر؟',
             'options': ['دانون بس'
                 , 'أكتيفيا بس'
@@ -431,18 +431,25 @@ $(document).ready(function () {
 
 // ball event handler
 $('#ball').click(function(){
-    console.log("questionIndex Variable ="+questionIndex);
+    //console.log("questionIndex Variable ="+questionIndex);
     if (questionIndex===0) {
         var answerID=getAnswer(classorange);
         console.log("selected answer is "+answerID);
         answerIsCorrect(questionIndex, answerID);
 $('#ball').addClass("notclickable");
 $('#ball').removeClass("clickable");
- questionIndex++;
-    }if(questionIndex!=0 && $('#ball').hasClass('clickable')) {
-        var answerID=getAnswer(classorange);
-            console.log("questionIndex Variable ="+questionIndex);
+        console.log("selected answer is "+answerID);
 
+console.log("at questionIndex: "+ questionIndex+" clickable is : "+$('#ball').hasClass("clickable"));
+console.log("at questionIndex: "+ questionIndex+" unclickable is : "+$('#ball').hasClass("unclickable"));
+
+ questionIndex++;
+    }
+    if(questionIndex!=0 && $('#ball').hasClass('clickable')) {
+        var answerID=getAnswer(classorange);
+            //console.log("questionIndex Variable ="+questionIndex);
+            console.log("at questionIndex: "+ questionIndex+" clickable is : "+$('#ball').hasClass("clickable"));
+console.log("at questionIndex: "+ questionIndex+" unclickable is : "+$('#ball').hasClass("unclickable"));
      answerIsCorrect(questionIndex, answerID);
      $('#ball').addClass("notclickable");
           $('#ball').removeClass("clickable");
@@ -797,8 +804,9 @@ if (isQuestionCorrect(currentQuestion-1)) {
     function answerIsCorrect(currentQuestion, answerID) {
         console.log(questions[currentQuestion].question);
 console.log("the correct answer is "+answer);
+var correctanswer= questions[currentQuestion].answer;
         //replace orange with green
-        if (answerID === 'a' && answer === 'a') {
+        if (answerID === 'a' && correctanswer === 'a') {
             $('#orange').removeClass('questiontopleftselected');
             $('#red').removeClass('questiontopleftselected');
              $('#orange').addClass('questionselected');
@@ -807,7 +815,7 @@ console.log("the correct answer is "+answer);
             $('#green').addClass("questiontopleftselected");
             console.log("answerID === 'a' && answer === 'a'");
             
-        }  if(answerID === 'a' && answer!='a'){
+        }  if(answerID === 'a' && correctanswer!='a'){
               $('#orange').removeClass('questiontopleftselected');
             $('#green').removeClass('questiontopleftselected');
              $('#orange').addClass('questionselected');
@@ -817,7 +825,7 @@ console.log("the correct answer is "+answer);
              console.log("answerID === 'a' && answer!='a'");
         }
         
-         if (answerID === 'b' && answer === 'b') {
+         if (answerID === 'b' && correctanswer === 'b') {
             $('#orange').removeClass('questiontoprightselected');
             $('#orange').addClass('questionselected');
             $('#red').removeClass("questiontoprightselected");
@@ -827,7 +835,7 @@ console.log("the correct answer is "+answer);
              console.log("answerID === 'b' && answer === 'b'");
 
         }   
-        if(answerID === 'b' && answer!='b'){
+        if(answerID === 'b' && correctanswer!='b'){
             $('#orange').removeClass('questiontoprightselected');
             $('#orange').addClass('questionselected');
             $('#green').removeClass("questiontoprightselected");
@@ -836,7 +844,7 @@ console.log("the correct answer is "+answer);
             $('#red').addClass("questiontoprightselected");
             console.log("answerID === 'b' && answer!='b'");
         }
-         if (answerID === 'c' && answer === 'c') {
+         if (answerID === 'c' && correctanswer === 'c') {
             $('#orange').removeClass("questionbottomleftselected");
             $('#orange').addClass('questionselected');
             $('#red').removeClass("questionbottomleftselected");
@@ -853,7 +861,7 @@ console.log("the correct answer is "+answer);
             $('#red').addClass("questionbottomleftselected");
              console.log("answerID === 'c' && answer!='c'");
         }
-         if (answerID === 'd' && answer === 'd') {
+         if (answerID === 'd' && correctanswer === 'd') {
             $('#orange').removeClass("questionbottomrightselected");
             $('#orange').addClass('questionselected');
             $('#red').removeClass("questionbottomrightselected");
@@ -861,7 +869,7 @@ console.log("the correct answer is "+answer);
             $('#green').removeClass('questionright');
             $('#green').addClass("questionbottomrightselected");
         }
-         if(answerID === 'd' && answer!='d'){
+         if(answerID === 'd' && correctanswer!='d'){
              $('#orange').removeClass("questionbottomrightselected");
             $('#orange').addClass('questionselected');
             $('#green').removeClass("questionbottomrightselected");
